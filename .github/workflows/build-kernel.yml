@@ -53,6 +53,14 @@ jobs:
     uses: ./.github/workflows/build-xiaomi-mipad4-lineageos22-a15.yml
     secrets: inherit
 
+  ## POCO
+  build-poco-f4:
+    name: "POCO F4"
+    strategy:
+      fail-fast: true
+    uses: ./.github/workflows/build-poco-f4.yml
+    secrets: inherit
+    
   ## Redmi
   build-redmi-k20pro-aosp-a15-sovietstaross:
     name: "Redmi K20 Pro (Soviet-Star-OSS)(Based-AOSP A15)"
